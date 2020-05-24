@@ -20,13 +20,14 @@ Be solid in the pre-work.  I was a math teacher because I was good at math, no m
 
 In case you're not familiar with the concept, flipped learning is it style in education where the student learns the topic on their own ahead of time so that by the time they get into the classroom the teacher can go to bigger and better topics. I looked at the course catalog to get an idea of topics that would be discussed in the first week, such as Matplotlib, Git, and Pandas. Everything I read in other blogs talked about how intense the first week is. I think I survived the first week OK because I had a basic understanding of the topics. This gave me more time to focus on the many other logistics of the first week that does make it a crazy week no matter how much you prepare for it.  You are doing computer terminal and Github set up, coordinating with groupmates ( and I was with a great group of people), and being exposed to a huge NYC terminal data set.
 
-\n\n
+   
 
 I think this is where I will pause and explain why my experience was extra unique.  Three days before the bootcamp started, my father was admitted to the hospital with Coronavirus.  A day later he was intubated.  In the last phone conversation I had with him, he asked about if I was ready for the first day and what were some of the last topics I had been reviewing.  He was smart, he made sure to mention Metis in that phone call because no matter how bad things got later on, I knew I couldn’t give up.  If you haven’t noticed, I’m writing in past tense.  My father succumbed to this evil virus on April 9, 2020.  That was Week 2, Day 4.  All throughout the first week, I got morning updates from my mother on his latest condition.  If you have read this far and have not applied to Metis yet, this is one major reason to do so.  Their staff and instructors have been so caring, supportive, and understanding.  But this is why you prepare. I could take a few minutes to step away and deal with something that was so much more important but yet not feel completely lost when I came back. 
 
-image![Dad and I](http://Dad_I.jpg)
+![Dad and I](http://Dad_I.jpg)
 
 
+   
 
 ### What?
 On that note, don’t be afraid to ask questions.  One instructor even explains that he will wait 7 seconds at times to really give you time to shout out a question.  You may think you will show weakness by asking.  You won’t.  Since I am writing this later in the bootcamp, I can say it makes your life easier to ask questions.  We have it harder being that our cohort is spread out across the country in our own little spaces.  You may not realize it but a couple people probably have the same question as you.   
