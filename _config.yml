@@ -3,8 +3,8 @@ permalink:           pretty
 
 # Setup
 title:               Nicole Semerano
-tagline:             A Moderately Okay Data Science Blog
-url:                 http://zwmiller.github.io
+tagline:             A Glimpse into My Data Science Blog
+url:                 http://nicolesemerano.github.io/
 paginate:            2
 baseurl:             ""
 
@@ -17,14 +17,14 @@ sass:
 
 # About/contact
 author:
-  name:              Zach Miller
-  url:               https://twitter.com/zaglamir
-  email:             zach@thisismetis.com
+  name:              Nicole Semerano
+  url:               http://www.linkedin.com/in/nicole-semerano/
+  email:             nicole.semerano@yahoo.com
 
 # Custom vars
 version:             2.0.0
 github:
-  repo:              https://github.com/zwmiller
+  repo:              https://github.com/nicolesemerano
 
 # Gems
 gems:
