@@ -24,7 +24,7 @@ In case you're not familiar with the concept, flipped learning is it style in ed
 
 I think this is where I will pause and explain why my experience was extra unique.  Three days before the bootcamp started, my father was admitted to the hospital with Coronavirus.  A day later he was intubated.  In the last phone conversation I had with him, he asked about if I was ready for the first day and what were some of the last topics I had been reviewing.  He was smart, he made sure to mention Metis in that phone call because no matter how bad things got later on, I knew I couldn’t give up.  If you haven’t noticed, I’m writing in past tense.  My father succumbed to this evil virus on April 9, 2020.  That was Week 2, Day 4.  All throughout the first week, I got morning updates from my mother on his latest condition.  If you have read this far and have not applied to Metis yet, this is one major reason to do so.  Their staff and instructors have been so caring, supportive, and understanding.  But this is why you prepare. I could take a few minutes to step away and deal with something that was so much more important but yet not feel completely lost when I came back. 
 
-![Dad and I](http://dad_i.jpg "Dad and I")
+!image[Dad and I](http://dad_i.jpg "Dad and I")
 
 
    
