@@ -4,7 +4,7 @@ title: About
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  Hello!  My name is Nicole Semerano.  I am currently living 'upstate' in Harriman, NY.  I graduated with a BA from Mary Washington College in Fredericksburg, VA.  The campus was on a former Civil War battlesite so it was only fitting that I was an American Studies major.  After that I got my Masters in Teaching Social Studies.  This started a 13 year career teaching Social Studies and Math.  I taught in various types of schools, from a juvenile detention centers to one of top 30 smallest schools in NY state, and others before and after.  Where does Data Science come into play, you ask?  
 </p>
 
 In the novel, *The Strange Case of Dr. Jekyll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
