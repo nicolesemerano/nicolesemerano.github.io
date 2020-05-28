@@ -1,0 +1,30 @@
+I"‡<p>This is a test post.</p>
+
+<p>To make a post, you must follow the naming convention shown for this file,
+with the data as the first part of the file name, seperated by dashes. Then
+the name of the post as you want it to be stored, with spaces as dashes.
+Finally, you must also keep the</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: post
+title: Zach's Test Post
+---
+</code></pre></div></div>
+
+<p>Part in the post to tell the page how to title your post and how to render it.</p>
+
+<p>Below are some examples of loading images, making links, and doing other
+markdown-y things.</p>
+
+<p><a href="http://thisismetis.com">This is a link</a></p>
+
+<p><img src="http://localhost:4000/images/AlanLeeShireGandalf.JPG" alt="Image test" /></p>
+
+<h3 id="other-things">Other things</h3>
+<ul>
+  <li>Like</li>
+  <li>lists</li>
+  <li>and</li>
+  <li>stuff</li>
+</ul>
+:ET
