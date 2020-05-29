@@ -26,7 +26,7 @@ I think this is where I will pause and explain why my experience was extra uniqu
 
 
 
-<img src="../images/dadnme.jpg" alt="Dad and I." width = "360" height = "361">
+<div style="text-align:center"><img src="../images/dadnme.jpg" alt="Dad and I." width = "360" height = "361"></div>
 
 
    
