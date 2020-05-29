@@ -37,7 +37,7 @@ pages_list:
   Archive: '/archive'
   Feed: '/index.html'
 
-<<<<<<< HEAD
+>>>>>>> HEAD
 plugins: [jekyll-paginate]
 =======
 theme: jekyll-theme-cayman
