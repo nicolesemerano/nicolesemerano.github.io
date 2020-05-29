@@ -1,8 +1,9 @@
  
 ---
 layout: post
-title: Week 1 at Metis:  I'm a Survivor!
+title: "Week 1 at Metis:  I'm a Survivor!"
 ---
+
 #### By: Nicole Semerano
 
 
