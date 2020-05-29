@@ -8,7 +8,7 @@ title: "Week 1 at Metis:  I'm a Survivor!"
 
 You can choose to sing Destiny Child's song right now.  Or you may be more in the mood to sing Gloria Gaynor's "I Will Survive".  Either way, let me give some recommendations for your first week in Boot Camp. I write this blog post from a unique perspective. My cohort was the first NYC cohort to go through the Boot Camp online during the coronavirus outbreak. As I write this, I hope we are the only one. And I'll tell you more later how my experience is even more unique.
 
-## **You Can Do It! 4**  
+## You Can Do It!  
 
 One instructor told us this on the first day. You are good enough. Otherwise you would not have been selected to Metis.  I suffered from what I learned was called Imposter Syndrome. Yes, I was surrounded by people with impressive careers or degrees. However, I have realized I am not an imposter.  I am smart enough and deserve to be in the same company with my peers.  There is times they teach me things and there are times the role is reversed.  Also, my grit, hard work, and determination make up for anything I may be lacking.
 
@@ -26,7 +26,7 @@ I think this is where I will pause and explain why my experience was extra uniqu
 
 
 
-<img src="../images/dadnme.jpg" alt="Dad and I." width = "720" height = 723>
+<img src="../images/dadnme.jpg" alt="Dad and I." width = "720" height = "723">
 
 
    
