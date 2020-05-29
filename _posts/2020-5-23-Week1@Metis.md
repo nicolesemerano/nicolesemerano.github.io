@@ -8,11 +8,11 @@ title: "Week 1 at Metis:  I'm a Survivor!"
 
 You can choose to sing Destiny Child's song right now.  Or you may be more in the mood to sing Gloria Gaynor's "I Will Survive".  Either way, let me give some recommendations for your first week in Boot Camp. I write this blog post from a unique perspective. My cohort was the first NYC cohort to go through the Boot Camp online during the coronavirus outbreak. As I write this, I hope we are the only one. And I'll tell you more later how my experience is even more unique.
 
-### You Can Do It!
+## <b>You Can Do It!</b>  
 
 One instructor told us this on the first day. You are good enough. Otherwise you would not have been selected to Metis.  I suffered from what I learned was called Imposter Syndrome. Yes, I was surrounded by people with impressive careers or degrees. However, I have realized I am not an imposter.  I am smart enough and deserve to be in the same company with my peers.  There is times they teach me things and there are times the role is reversed.  Also, my grit, hard work, and determination make up for anything I may be lacking.
 
-### Pre-work
+## Pre-work
 
 Be solid in the pre-work.  I was a math teacher because I was good at math, no matter the level.  I dusted off my old Statistics and Calculus textbooks and got myself back up on those topics.  But more importantly, I made Python my main goal.  I first learned Python only a few months before coming to Metis.  At a Metis Open House, I heard an alumni say to know linear algebra backwards and forwards. Thankfully during my technical interview, an alumni recommended knowing Python like the back of your hand.  I agree with the latter.  Really practice the coding style in the pre-work.  I am a visual learner so I watched numerous YouTube videos on the topics as well as practicing my own code.  I would add get proficient with Pandas in Python.  You are constantly using it.  
 
@@ -26,7 +26,7 @@ I think this is where I will pause and explain why my experience was extra uniqu
 
 
 
-<img src="../images/dadnme.jpg" alt="Dad and I." width = "1000">
+<img src="../images/dadnme.jpg" alt="Dad and I." width = "800">
 
 
    
