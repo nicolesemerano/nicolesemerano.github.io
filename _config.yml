@@ -36,9 +36,3 @@ pages_list:
   About: '/about'
   Archive: '/archive'
   Feed: '/index.html'
-
->>>>>>> HEAD
-plugins: [jekyll-paginate]
-=======
-theme: jekyll-theme-cayman
->>>>>>> 7393299b5a5f6d8a9345893df0d6c221b707e31b
