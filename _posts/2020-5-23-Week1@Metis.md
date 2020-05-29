@@ -26,7 +26,7 @@ I think this is where I will pause and explain why my experience was extra uniqu
 
 
 
-<img src="../images/dadnme.jpg" alt="Dad and I." width = "720" height = "723">
+<img src="../images/dadnme.jpg" alt="Dad and I." width = "360" height = "361">
 
 
    
