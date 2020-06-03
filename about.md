@@ -19,5 +19,5 @@ Nicole Semerano
 
 nicole.semerano@yahoo.com
 
-<img src="RCS.jpg">
+<img src="/images/RCS.jpg">
 
