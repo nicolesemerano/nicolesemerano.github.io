@@ -21,5 +21,5 @@ Nicole Semerano
 
 nicole.semerano@yahoo.com
 
-<img src="RCS.jpg">
+<img src="RCS.jpg" width="247" height="361">
 
