@@ -17,9 +17,9 @@ Thank you for reading!  Check out my other spaces:
 * [Linkedin](https://www.linkedin.com/in/nicole-semerano/)
 * [Github](https://github.com/nicolesemerano)
 
-Nicole Semerano YUP
+Nicole Semerano
 
 nicole.semerano@yahoo.com
 
-<img src="images/RCS_full.JPG" alt="RCS school photo" width = "247" height = "361">
+<div><img src="RCS.JPG" alt="RCS school photo" width = "247" height = "361"></div>
 
