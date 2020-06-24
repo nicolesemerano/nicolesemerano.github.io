@@ -3,6 +3,7 @@ layout: page
 title: About
 ---
 
+hi
 <p class="message">
 Hello!  My name is Nicole Semerano.  I am currently living 'upstate' in Harriman, NY.  I graduated with a BA from Mary Washington College in Fredericksburg, VA.  The campus was on a former Civil War battlesite so it was only fitting that I was an American Studies major.  After that I got my Masters in Teaching Social Studies.  This started a 13 year career teaching Social Studies and Math.  I taught in various types of schools, from a juvenile detention centers to one of top 30 smallest schools in NY state, and others before and after.  Where does Data Science come into play, you ask?  
 </p>
@@ -21,7 +22,5 @@ Nicole Semerano
 
 nicole.semerano@yahoo.com
 
-<div style="text-align:left"><img src="images/RSC.jpg" alt="RCS school photo"></div>
+<div style="text-align:left"><img src="images/RSC.png" alt="RCS school photo" width = "247" height = "361"></div>
 
-
-width = "247" height = "361"
