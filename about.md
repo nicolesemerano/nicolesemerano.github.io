@@ -21,5 +21,5 @@ Nicole Semerano
 
 nicole.semerano@yahoo.com
 
-<div><img src="RCS.JPG" alt="RCS school photo" width = "247" height = "361"></div>
+<div><img src="https://pkimgcdn.peekyou.com/8e119dc25b935254e6516b7dd27349b1.jpeg" alt="Nicole" width = "247" height = "261"></div>
 
