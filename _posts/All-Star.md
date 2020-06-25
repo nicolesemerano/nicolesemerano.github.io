@@ -21,7 +21,8 @@ I started off by using 17 features as my X value.  These features ranged from on
 
 I also dealt with the obvious class imbalance.  There are many methods to accomidating this, but I chose to do it before the actual training of the model.  I wanted to start fresh.  I multiplied the minority class by 5 to oversample it.  I experimented with higher numbers but this caused the model to predict more 0s than it should.  I also adjusted the threshold after training which is another way to find the right balance and make the best model.  I ended up finding the threshold of .25.  This created the following confusion matrix:
 
-7777777ADD CONFUSION MATRIX HERE77777777777777
+<div style="text-align:center"><img src="../images/ConfusionMatrix.PNG" alt="Confusion Matrix." width = "500" height = "375"></div>
+
 
 I settled on this with my model for a couple of reasons.  One, it realistically portrays the rate at which people are selected to the All-Star team.  The True Negatives are the many people who do not make the team while the True Positives are the select few that do.  Secondly, I kept my False Negatives low.  I would hate for my model to keep someone off the All-Star team that truely deserved it.  Yet, this threshold kept my False Positives from being too high as some other thresholds did.  I would rather have a player be on the team that really didn't deserve it.  From a fan perspective, my undeserving player makes the team...I'm happy and none the wiser.  But my deserving player is kept off...I'm infuriated and devistated.
 
