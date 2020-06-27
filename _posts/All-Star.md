@@ -22,6 +22,7 @@ Like any good project, I started out with cleaning my data.  I downloaded the La
 </div>
 I started off by using 17 features as my X value.  These features ranged from ones you would assume, like hits, RBIs, and runs, to ones you wouldn't, like how many times a player was hit by a pitch.  Fast forward in my experimenting, I tried a model with just the features with the highest importance and it did drastically worse.  In my short time in the data science world I have learned the big rule that the more data or features you have it more likely will make things more accurate.  And this project proves that stance correct.  As said before, the target was whether a player was an All-Star(1) or not(0).  I then made a train/test split with a test size of 30%.  This is maybe a little large compared to what recent theory suggests, but I was following the sample projects shown to me.  
 </p>
+
 I also dealt with the obvious class imbalance.  There are many methods to accomidating this, but I chose to do it before the actual training of the model.  I wanted to start fresh.  I multiplied the minority class by 5 to oversample it.  I experimented with higher numbers but this caused the model to predict more 0s than it should.  
 
 # When you come to a fork in the road, take it.
@@ -52,3 +53,18 @@ I settled on this with my model for a couple of reasons.  One, it realistically 
   <img width="33%" height="33%" src="https://cdn10.bigcommerce.com/s-8c7a6u/products/349038/images/954851/NYY1999WSCTS__12541.1444762787.1280.1280.jpg?c=2" align = "right"/> 
 In both the XG Boost and Random Forrest, I wanted to test it with data I was familiar with.  I chose to look at the 1999 Yankees.  This included many players that just the year before had been a part of the winningest team in baseball history, acheiving a record of 125-50.  And my hindsight also knows the '99 Yankees ended up going to win it all again, so they had some talent on that team.  I looked and only two hitters, Derek Jeter and Bernie Williams, had been named an All-Star.  However three other players had good batting averages in the column I created.  Yet when I ran them through the model(the same happened in both models actually), only one, Chuck Knobloch, was deemed to be an All-Star.  The two others, Paul O'Neill and Ricky Ledee, were not.  When I looked at the individual statistics, Knobloch had a lot more runs and less strikeouts than the other two players.  These key features should have put him in the All-Star game.  And it also showed me how important an app like this could be.  Here is my beloved Yankees where at a quick glance of their batting average I could make an assumption on who should be an All-Star.  But a true All-Star needs to be well-rounded and this model can look at all 17 features.  
 </p>
+
+# Let's Go to the Videotape
+
+Yes, I know, my only non-baseball heading.  If you are from the New York area this is something a local sportscaster would say, so it does relate.  As I mentioned, I created an app to go with this project.  My mindset was it could be used by a fan, like myself, or the All-Star manager.  I would never want this app to be the sole way an All-Star is selected.  I am in the camp that there should still be live umpires and not a camera system at homeplate. It is a game, after all.  On the same note, a manager comes with years of experience that should not be ignored.  My goal was for an app like this to be used in those last few scenarios.  Currently each team gets 34 players.  A manager could use this to determine players 31-34.  Or maybe just even when they have to pick player #35 and #36 when it is declared the players that get injured and cannot play. My desire of this whole project was to take some of the bias out of the selection and I think this does just that.  
+
+At the time of me writing this blog, I will readily admit the style of my app is soooooo basic.  It looks like something a 3rd grader would make.  I have since made more complex CSS designs as you can see in other posts, but I was just proud that it worked. Below I have a video of my app in action. I took the statistics of Hank Aaron in 1972, where his numbers were not like in other seasons. 
+
+![](../images/All_Star_App.gif)
+
+Testing the gif
+
+<video width="480" height="320" controls><source src="../images/All_Star_App.mov" type="video/mp4">
+</video>
+
+If you’re interested in learning more, check out my GitHub!
