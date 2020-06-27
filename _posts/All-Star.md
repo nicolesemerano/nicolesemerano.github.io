@@ -58,13 +58,12 @@ In both the XG Boost and Random Forrest, I wanted to test it with data I was fam
 
 Yes, I know, my only non-baseball heading.  If you are from the New York area this is something a local sportscaster would say, so it does relate.  As I mentioned, I created an app to go with this project.  My mindset was it could be used by a fan, like myself, or the All-Star manager.  I would never want this app to be the sole way an All-Star is selected.  I am in the camp that there should still be live umpires and not a camera system at homeplate. It is a game, after all.  On the same note, a manager comes with years of experience that should not be ignored.  My goal was for an app like this to be used in those last few scenarios.  Currently each team gets 34 players.  A manager could use this to determine players 31-34.  Or maybe just even when they have to pick player #35 and #36 when it is declared the players that get injured and cannot play. My desire of this whole project was to take some of the bias out of the selection and I think this does just that.  
 
-At the time of me writing this blog, I will readily admit the style of my app is soooooo basic.  It looks like something a 3rd grader would make.  I have since made more complex CSS designs as you can see in other posts, but I was just proud that it worked. Below I have a video of my app in action. I took the statistics of Hank Aaron in 1972, where his numbers were not like in other seasons. 
+At the time of me writing this blog, I will readily admit the style of my app is soooooo basic.  It looks like something a 3rd grader would make.  I have since made more complex CSS designs as you can see in other posts, but I was just proud that it worked. I used the Random Forest model soley in this stage as it could predict statistics that did not come from my pandas table.  Below I have a video of my app in action. I took the statistics of Hank Aaron in 1972, where his numbers were not like in other seasons. Before all you Braves fans think I'm hating on Hank Aaron, I consider him to be the true home run record holder and have great admiration for his career.  I use this example as proof of some of the bias in this selection process.
+
 
 ![](../images/All_Star_App.gif)
 
-Testing the gif
+Here he "only" had 34 home runs that season, his batting average was .265, and his RBI and run totals were the lowest since his 1st season.  Yet he had been named an All-Star, probably more out of his notariety and past accomplishments.  This model and app shows he should not have been an All-Star that year. 
 
-<video width="480" height="320" controls><source src="../images/All_Star_App.mov" type="video/mp4">
-</video>
 
-If you’re interested in learning more, check out my GitHub!
+Thank you for reading about my process in classifying All-Stars.  There is still work that needs to be done.  I would like to update the app to be easier to input a players statistics.  Moreover, could I roll out the classification in stages?  For example, just inputting a low number of hits would immediately classify the player with a no before inputting the other 16 features.  I would also like to complete a similar model with statistics of pitchers.  For now, I'm happy with the model I created and the many things I learned along the way.  If you’re interested in checking out the code and materials that went with this project, check out my [Github](https://github.com/nicolesemerano/Metis-Project-3-All-Star-Classification)!
