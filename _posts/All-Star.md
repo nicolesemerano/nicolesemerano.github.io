@@ -16,14 +16,12 @@ I was born into a baseball family.  I was raised a Yankees fan, but I have cousi
 Like any good project, I started out with cleaning my data.  I downloaded the Lahman's Baseball Database.  I started with the batting statistics to focus on the largest set of players.  Then I eliminated all rows for players prior to 1933 when the All-Star Game started.  I also made sure all my players played at least 35 games and had at least that many at bats (a way to eliminate pitchers).  In the All-Star table of the database I eliminated 1945 as there was no game that year to preserve resources for WWII. Furthermore, I made sure players were only listed once for years 1959-1961 as I learned those years there were two games each year.  I also added a columns of 1s as All-Stars so when I merged this table with the batting statistics I had my target classification values of 0s and 1s.  In both tables and after the merge I also changed many NaN value to zero.  I ended up with 32943 non All-Stars and 4056 All-Stars.  This matched any historical research I had done.
 
 # Spring Training
-
+<p align="right">
 <div>
-    <a href="https://plotly.com/~nicole.semerano/1/?share_key=52HVgknBtJDJ80qU5ftyXE" target="_blank" title="All_Star_Feature_Importance" style="display: block; text-align: center;"><img src="https://plotly.com/~nicole.semerano/1.png?share_key=52HVgknBtJDJ80qU5ftyXE" alt="All_Star_Feature_Importance" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
-    <script data-plotly="nicole.semerano:1" src="https://plotly.com/embed.js" async></script>
+    <a href="https://plotly.com/~nicole.semerano/1/?share_key=52HVgknBtJDJ80qU5ftyXE" target="_blank" title="All_Star_Feature_Importance" style="display: block; text-align: left;"><img src="https://plotly.com/~nicole.semerano/1.png?share_key=52HVgknBtJDJ80qU5ftyXE" alt="All_Star_Feature_Importance" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" align = "left"/></a>
 </div>
-
 I started off by using 17 features as my X value.  These features ranged from ones you would assume, like hits, RBIs, and runs, to ones you wouldn't, like how many times a player was hit by a pitch.  Fast forward in my experimenting, I tried a model with just the features with the highest importance and it did drastically worse.  In my short time in the data science world I have learned the big rule that the more data or features you have it more likely will make things more accurate.  And this project proves that stance correct.  As said before, the target was whether a player was an All-Star(1) or not(0).  I then made a train/test split with a test size of 30%.  This is maybe a little large compared to what recent theory suggests, but I was following the sample projects shown to me.  
-
+</p>
 I also dealt with the obvious class imbalance.  There are many methods to accomidating this, but I chose to do it before the actual training of the model.  I wanted to start fresh.  I multiplied the minority class by 5 to oversample it.  I experimented with higher numbers but this caused the model to predict more 0s than it should.  
 
 # When you come to a fork in the road, take it.
@@ -49,9 +47,8 @@ I hope you are doing ok with my baseball analogies.  Thankfully I did not have t
 I settled on this with my model for a couple of reasons.  One, it realistically portrays the rate at which people are selected to the All-Star team.  The True Negatives are the many people who do not make the team while the True Positives are the select few that do.  Secondly, I kept my False Negatives low.  I would hate for my model to keep someone off the All-Star team that truely deserved it.  Yet, this threshold kept my False Positives from being too high as some other thresholds did.  I would rather have a player be on the team that really didn't deserve it.  From a fan perspective, my undeserving player makes the team...I'm happy and none the wiser.  But my deserving player is kept off...I'm infuriated and devistated.
 
 # Scorecard
-<p align="center">
-  <img width="33%" height="33%" src="https://cdn10.bigcommerce.com/s-8c7a6u/products/349038/images/954851/NYY1999WSCTS__12541.1444762787.1280.1280.jpg?c=2">
-</p>
 
+<p align="left">
+  <img width="33%" height="33%" src="https://cdn10.bigcommerce.com/s-8c7a6u/products/349038/images/954851/NYY1999WSCTS__12541.1444762787.1280.1280.jpg?c=2" align = "right"/> 
 In both the XG Boost and Random Forrest, I wanted to test it with data I was familiar with.  I chose to look at the 1999 Yankees.  This included many players that just the year before had been a part of the winningest team in baseball history, acheiving a record of 125-50.  And my hindsight also knows the '99 Yankees ended up going to win it all again, so they had some talent on that team.  I looked and only two hitters, Derek Jeter and Bernie Williams, had been named an All-Star.  However three other players had good batting averages in the column I created.  Yet when I ran them through the model(the same happened in both models actually), only one, Chuck Knobloch, was deemed to be an All-Star.  The two others, Paul O'Neill and Ricky Ledee, were not.  When I looked at the individual statistics, Knobloch had a lot more runs and less strikeouts than the other two players.  These key features should have put him in the All-Star game.  And it also showed me how important an app like this could be.  Here is my beloved Yankees where at a quick glance of their batting average I could make an assumption on who should be an All-Star.  But a true All-Star needs to be well-rounded and this model can look at all 17 features.  
-
+</p>
