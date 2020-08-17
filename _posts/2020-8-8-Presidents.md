@@ -25,3 +25,27 @@ The data, each being a full speech, has understandable asymmetry.  I could have 
 
 ## Topic Modeling
 I first split up each speech to check the frequency of all the words.  Here I was able to make my own list of stop words in preparation of count vectorizing.  Some words I was not surprised to find, like ‘united’, ‘states’ and ‘america’.’ One that caught me off guard but made sense was ‘thank’ and ‘you’.  Think of how many speeches start off with that phrase or are thanking people later on for their accomplishments.  Two other words of note are ‘applause’ and ‘transcript’.  This just shows how the speeches are documented for history along with how presidents and their speech writers make notes within the speech. 
+
+I processed the data with a Count Vectorization with a df-maximum of 40% . This allowed many of the random topics to be filtered out of my topic modeling.  On the other hand I combined the NLTK’s stopwords with my list of over a dozen words to filter out the words that show up too much.  I settled on the nonnegative matrix factorization(NMF) for my modeling. I experimented with various topic modelers and vectorizers.  Using my knowledge of history, I did not like anything about what LDA put out.  Within NMF, the TDIF Vectorizer created mismatched topics. It had two different categories based on the Vietnam War yet missed major topics that I found in my final result that I will discuss below.  I also experimented with how many topics to focus on.  This part of NLP really is like Goldielocks and the 3 Bears.  I tried 5, that was too little.  I tried 15 and that was too much.  My initial run of 10 ended up being the perfect amount.   
+
+When I ran it that first time I got to appreciate NLP’s full power.  The first two topics were words that related to domestic and economic affairs.  Ok, makes sense.  Then I read the 3rd topic.  I realized all the words had to do with slavery and the antebellum compromises.  I was ecstatic.  NMF was supposed to be better for short text documents.  However its benefits shined through.   NMF learns topics by directly decomposing the term-document matrix and it reduces the dimensions to find the main topics of the speeches.
+
+I set out to find a correlation with the 10 topics.  Topic modeling showed me some topics I wouldn’t expect, such as the Civil Service establishment.  I used to teach this in about 20 minutes yet this shows teachers should give this more emphasis. Also, there was a topic I best named ‘Encouragement’.  You have Presidents that have campaign slogans of positivity that make it into their presidency, but that has been going on for years.   This topic shows up in the 1950s with the advent of television and proves that television has shaped the presidency probably more than any invention.  There  are a few topics that no matter my tinkering, I was surprised never showed up as a major topic. There were no words or topics that I could find that related specifically to the World Wars or the creation of new amendments.  
+
+<p align="center">
+  <img  width="100%" height="100%"src="../images/Speech_heatmap.png" alt="Speeches Timeline Heatmap">
+</p>
+
+??????? Do I put in code after first two sentences of how I grouped topics??????????????
+
+I’m a visual learner and this heatmap taught me even more.  Summing up the words of each topic you can observe them across time.  The darkest box belongs to the Cold War in the 1960s.  This time period whether good(Space Race) or bad (Cuban Missile Crisis) encompassed the United States in many ways.  The darker stretch in the 1800s Politics demonstrates how this is a time period that should not be shortchanged in its teachings.  The politics around the National Bank were a debate for years.  The Mexican American War and Manifest Destiny thoughts formulated the shape and land of our country. 
+
+## Sentiment Analysis
+
+The second major analysis I did was sentiment analysis.  I went into this cautious as I knew my data is pre-written speeches.  Half the time they are not written by the president himself but by a team of speechwriters. If you want real true feelings go listen to the LBJ's tapes on YouTube. Or maybe you follow Donald Trump on Twitter.  However, in the end I saw sentiment results that matched many of our presidents. 
+
+**************Put Tableau Dashbord???? Or just pics*****
+
+So as you can see Dwight Eisenhower's had the highest positivity sentiment which can be explained by the prosperity, culture and good economy of the 1950's. I was surprised that there was not lower positivity during hard times such as the Great Depression, the Vietnam War, or other wars.  I did look at negative sentiment as well and there was not a peak then either. I guess this gets back to those encouragement vocabulary where US presidents used rally cries and language of reassurance during the hard times. 
+
+
