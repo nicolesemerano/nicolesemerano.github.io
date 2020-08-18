@@ -19,9 +19,9 @@ As I started cleaning up and analyzing my data, I realized some presidents shoul
 The data, each being a full speech, has understandable asymmetry.  I could have scraped other speeches from other sources, but it would have made it extremely skewed to modern times.  Technology such as the radio and television led to more speeches versus letters written.  Examples of this already in the data set include televised Addresses to the Nation and FDR’s Fireside Chat’s. I color coded my bar graph to represent presidents who served more than one term versus 4 or less years.  Lyndon Johnson, with the most, had historic events such as the Civil Rights Acts and the Vietnam War to address.  On the flip side, the two presidents with only one speech in the collection died months into their term. William Henry Harrison died specifically BECAUSE he gave his 2-hour inaugural speech in a snowstorm outside without a coat on. 
 </p>
 <p>
-  <br></br>
-  <br></br>
+
 </p>
+
 
 ## Topic Modeling
 I first split up each speech to check the frequency of all the words.  Here I was able to make my own list of stop words in preparation of count vectorizing.  Some words I was not surprised to find, like ‘united’, ‘states’ and ‘america’.’ One that caught me off guard but made sense was ‘thank’ and ‘you’.  Think of how many speeches start off with that phrase or are thanking people later on for their accomplishments.  Two other words of note are ‘applause’ and ‘transcript’.  This just shows how the speeches are documented for history along with how presidents and their speech writers make notes within the speech. 
@@ -36,16 +36,35 @@ I set out to find a correlation with the 10 topics.  Topic modeling showed me so
   <img  width="100%" height="100%"src="../images/Speech_heatmap.png" alt="Speeches Timeline Heatmap">
 </p>
 
+
+I’m a visual learner and creating a heatmap taught me even more.  Summing up the words of each topic you can observe them across time.
 ??????? Do I put in code after first two sentences of how I grouped topics??????????????
 
-I’m a visual learner and this heatmap taught me even more.  Summing up the words of each topic you can observe them across time.  The darkest box belongs to the Cold War in the 1960s.  This time period whether good(Space Race) or bad (Cuban Missile Crisis) encompassed the United States in many ways.  The darker stretch in the 1800s Politics demonstrates how this is a time period that should not be shortchanged in its teachings.  The politics around the National Bank were a debate for years.  The Mexican American War and Manifest Destiny thoughts formulated the shape and land of our country. 
+
+The darkest box belongs to the Cold War in the 1960s.  This time period whether good(Space Race) or bad (Cuban Missile Crisis) encompassed the United States in many ways.  The darker stretch in the 1800s Politics demonstrates how this is a time period that should not be shortchanged in its teachings.  The politics around the National Bank were a debate for years.  The Mexican American War and Manifest Destiny thoughts formulated the shape and land of our country. 
 
 ## Sentiment Analysis
 
-The second major analysis I did was sentiment analysis.  I went into this cautious as I knew my data is pre-written speeches.  Half the time they are not written by the president himself but by a team of speechwriters. If you want real true feelings go listen to the LBJ's tapes on YouTube. Or maybe you follow Donald Trump on Twitter.  However, in the end I saw sentiment results that matched many of our presidents. 
+The second major analysis I did was sentiment analysis.  I went into this cautiously as I knew my data is pre-written speeches.  Half the time they are not written by the president himself but by a team of speechwriters. If you want real true feelings go listen to the LBJ's tapes on YouTube. Or maybe you follow Donald Trump on Twitter.  However, in the end I saw sentiment results that matched many of our presidents.  I utilized both NLTK’s VADER Sentiment Intensity Analyzer and its basic Sentiment Analyzer.  These tools allow you to look at both negative and positive ratings, but I decided to focus on their positivity scores.  In either area, the scores have low percentages and that is ok.  These speeches are content based, and that is a good thing.  Even when a president is conveying something negative, say communism in the 1950s, sentiment analysis is not going to pick up on that.  On the flip side, take a look at the beautiful language of famous Gettysburg Address:
 
-**************Put Tableau Dashbord???? Or just pics*****
+*"Fourscore and seven years ago our fathers brought forth, on this continent, a new nation, conceived in liberty, and dedicated to the proposition that all men are created equal.”*
 
-So as you can see Dwight Eisenhower's had the highest positivity sentiment which can be explained by the prosperity, culture and good economy of the 1950's. I was surprised that there was not lower positivity during hard times such as the Great Depression, the Vietnam War, or other wars.  I did look at negative sentiment as well and there was not a peak then either. I guess this gets back to those encouragement vocabulary where US presidents used rally cries and language of reassurance during the hard times. 
+Maybe right now you’re all warm and fuzzy right now reading that iconic line.  Yes, words like ‘new’ and ‘equal’ will get points.  But overall, this involves a lot of neutral language that when strung together has a much different meaning.  But that is what is so amazing with Sentiment Analysis.  It picks up on the little nuances.  Moreover VADER was specifically designed to deal with domain-specific language.  
 
+To create a table to show in a Tableau graph, I instituted the following:
+
+```
+def sentiment_analysis_graph(president):
+    filter1 = df.President.str.contains(president)
+    func_df = df.loc[filter1]
+    text = ''.join(str(func_df.Split[:]))
+    score = SentimentIntensityAnalyzer().polarity_scores(text)
+    return score['pos']
+```
+
+So as you can see below Dwight Eisenhower had the highest positivity sentiment.  This can be explained by the prosperity, culture and good economy of the 1950's. The higher numbers across the board in the last half century correlates with the topic modeling topic of ‘Encouragement’.  I was surprised that there was not lower positivity during hard times such as the Great Depression, the Vietnam War, or other wars.  In my negative sentiment analysis there was not a peak then either. I guess this gets back to those encouragement vocabulary where US presidents used rally cries and language of reassurance during the hard times. 
+
+![](../images/Sentiment_graph.gif)
+
+More to come
 
