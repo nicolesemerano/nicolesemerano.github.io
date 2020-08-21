@@ -23,6 +23,8 @@ The data, each being a full speech, has understandable asymmetry.  I could have 
 </p>
 
 
+
+
 ## Topic Modeling
 I first split up each speech to check the frequency of all the words.  Here I was able to make my own list of stop words in preparation of count vectorizing.  Some words I was not surprised to find, like ‘united’, ‘states’ and ‘america’.’ One that caught me off guard but made sense was ‘thank’ and ‘you’.  Think of how many speeches start off with that phrase or are thanking people later on for their accomplishments.  Two other words of note are ‘applause’ and ‘transcript’.  This just shows how the speeches are documented for history along with how presidents and their speech writers make notes within the speech. 
 
@@ -66,5 +68,29 @@ So as you can see below Dwight Eisenhower had the highest positivity sentiment. 
 
 ![](../images/Sentiment_graph.gif)
 
-More to come
+There is a better way to visualize this information.  Since the values are so similar, the bar graph doesn’t really work for comparing multiple presidents.  It is easy to see Eisenhower as the most positive or Andrew Johnson as the least, but there are too many presidents that differ by tenths of a percent. A Tree Map, however, shows the clear transition from most positive to least.   To create the Tree Map I did not code any Python.  I created a csv file from the President’s sentiment scores.  I then uploaded this along with my main Speeches dataframe to Tableau.  I enjoy how this visualization tool helps organize data, is interactive, and lets me color code features. 
+
+I want to note two presidents who rounded out the top 10 most positive.  John Adams is what I nicknamed the ‘Rebound’ president in my US History classroom. He came after George Washington yet could never live up to him.  That combined with the XYZ Affair led him to be the only founding father to serve only one term.  This tree map recognizes him for the great orator he was.  Much later in our history you have Jimmy Carter, another man that struggled as president.  I once had a very conservative college professor say Carter was the nicest guy to be president. That kindness comes across in his speeches.
+
+![](../images/TreeMapPres.png)
+
+Yet down in the lower right corner are the least positive presidents.  Using content knowledge, this correlates with history.  Andrew Johnson was the first president impeached.  He did not get along with Congress’ Radical Republicans.  They passed the Tenure of Office Act which required senatorial approval of removal of any civil officer and he soon after violated it.  These contentions and disagreements over Reconstruction plans produced the lower sentiment score.  James Buchanan and John Tyler are both considered some of the worst Presidents. You think staff retention under Donald Trump is bad...John Tyler's whole cabinet quit a few months into his presidency! And William Taft did not want to be president. Taft never wanted to be in that sole power position.  Yet his wife and Teddy Roosevelt had political ambitions for him that led him to comply.  This data shows his unhappiness and his yearning to his eventual post as Chief Justice of the Supreme Court.  
+
+## Word Clouds
+
+
+<p align="center">
+  <img  width="75%" height="75%"src="../images/GW_wordCloud.png" alt="Washington Word Cloud">
+</p>
+
+One last NLP analysis I did was compare top vocabulary used by different presidents.  I used Word Clouds which highlight words that are used more frequently.  I was not going to do this with all 44 Presidents, but I picked obvious people like Washington and Lincoln along with some personal favorites.  Many of these word clouds had vocabulary that mentioned the government and features of it like the Senate or the Constitution. I also looked at 2 presidents I personally thought did not have great oratory skills.  Even here the data showed personal opinions are not always true as one of them had a word cloud that was comparable to my picks for ‘greats’.  The other, all I can express is…
+
+<p align="center">
+  <img  width="33%" height="33%" src="../images/head_shake.gif" alt="Harvey Head Shake">
+</p>
+
+I hope you enjoyed reading about my project as much as I did creating it.  I tried to stay balanced throughout the project.  I did not include analysis with comparing or clustering speeches based on political party for two main reasons.  One, I did not want to add to the divisiveness culture.  Secondly, the Republican and Democratic Parties have not always been around.  And initial parties like the Federalists only lasted the first 50 years of the country.  I did not want to group the older parties into an ‘other’ category in calculations as the parties had polarizing viewpoints. I taught history for many years in an area where my political beliefs did not match the families I taught.  My biggest thing with students was to try to show them to look at both sides.  If you’re interested in checking out the code and materials that went with this project, check out my [Github](https://github.com/nicolesemerano/Metis-Project-4-Presidential-Speeches-NLP)!  So I leave you with thoughts from George Washington in his Farewell Address.  His sentiment on his presidency matches my sentiment to this project.
+
+*”My feelings do not permit me to suspend the deep acknowledgment ... for the opportunities I have thence enjoyed of manifesting my inviolable attachment, by services faithful and persevering, though in usefulness unequal to my zeal.”*
+
 
