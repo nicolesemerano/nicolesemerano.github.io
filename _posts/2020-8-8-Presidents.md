@@ -7,22 +7,9 @@ title: "Presidential Speech Analysis with Natural Language Processing"
 
 Natural Language Processing intrigued me from the beginning.  I first heard about it at a presentation of an author predictor based on word patterns.  It later was explained to me with song lyrics across the decades.  So I sought to also use it in an historic way.  And where could I get a lot of data?  Presidents: they love to talk!  Or at least most did.  So I created a NLP project on Presidential speeches in American history. It includes all 44 presidents from George Washington's first inauguration in 1789 to speeches on Coronavirus at the end  April of 2020. Yes, I said 44 presidents as Grover Cleveland had two separate terms.  Fair warning as you read along:  I was an American Studies major and taught history for 12 years.  So don’t mind me as I throw in some presidential knowledge along with my knowledge on Data Science.  Enjoy!
 
+## Speech Organization
+
 I scraped the majority of my speeches with Selenium from UVA's Miller Center.   Their collection of speeches and other primary sources is considered top-notch, even being referenced by Harvard’s database.  The page required scrolling so I needed more than your basic Beautiful Soup in scraping. 
-
-<p align="left">
-  <img width="33%" height="33%" src="../images/No._Pres_Speeches.png" alt="Speeches Count Bar Graph" align = "left"/> 
-<p align="right">
-    <br></br>
-    
-As I started cleaning up and analyzing my data, I realized some presidents should have had more speeches than were present in this collection.  I could fix this for Truman and Eisenhower by adding in their missing State of the Union Speeches from the NLTK’s corpus.  Every other president in this corpus had their SOU speeches already in the Miller Center collection.  In total my analysis included 1018 speeches with approximately 23.8 million words.  The math side of me did have to look at a few numbers and stats.  The shortest speech came from George Washington’s Second Inaugural Address with 787 words.  On the other hand, the longest speech goes to Harry Truman’s State of the Union address in 1946 at just shy of 170 thousand.  He had to discuss such historic topics as the post-war economy, protection for veterans, the creation of the United Nations, communism concerns...and that doesn’t even cover the first half!  
-  
-The data, each being a full speech, has understandable asymmetry.  I could have scraped other speeches from other sources, but it would have made it extremely skewed to modern times.  Technology such as the radio and television led to more speeches versus letters written.  Examples of this already in the data set include televised Addresses to the Nation and FDR’s Fireside Chat’s. I color coded my bar graph to represent presidents who served more than one term versus 4 or less years.  Lyndon Johnson, with the most, had historic events such as the Civil Rights Acts and the Vietnam War to address.  On the flip side, the two presidents with only one speech in the collection died months into their term. William Henry Harrison died specifically BECAUSE he gave his 2-hour inaugural speech in a snowstorm outside without a coat on. 
-</p>
-<p>
-
-</p>
-
-
 
 
 ## Topic Modeling
@@ -30,20 +17,39 @@ I first split up each speech to check the frequency of all the words.  Here I wa
 
 I processed the data with a Count Vectorization with a df-maximum of 40% . This allowed many of the random topics to be filtered out of my topic modeling.  On the other hand I combined the NLTK’s stopwords with my list of over a dozen words to filter out the words that show up too much.  I settled on the nonnegative matrix factorization(NMF) for my modeling. I experimented with various topic modelers and vectorizers.  Using my knowledge of history, I did not like anything about what LDA put out.  Within NMF, the TDIF Vectorizer created mismatched topics. It had two different categories based on the Vietnam War yet missed major topics that I found in my final result that I will discuss below.  I also experimented with how many topics to focus on.  This part of NLP really is like Goldielocks and the 3 Bears.  I tried 5, that was too little.  I tried 15 and that was too much.  My initial run of 10 ended up being the perfect amount.   
 
-When I ran it that first time I got to appreciate NLP’s full power.  The first two topics were words that related to domestic and economic affairs.  Ok, makes sense.  Then I read the 3rd topic.  I realized all the words had to do with slavery and the antebellum compromises.  I was ecstatic.  NMF was supposed to be better for short text documents.  However its benefits shined through.   NMF learns topics by directly decomposing the term-document matrix and it reduces the dimensions to find the main topics of the speeches.
 
-I set out to find a correlation with the 10 topics.  Topic modeling showed me some topics I wouldn’t expect, such as the Civil Service establishment.  I used to teach this in about 20 minutes yet this shows teachers should give this more emphasis. Also, there was a topic I best named ‘Encouragement’.  You have Presidents that have campaign slogans of positivity that make it into their presidency, but that has been going on for years.   This topic shows up in the 1950s with the advent of television and proves that television has shaped the presidency probably more than any invention.  There  are a few topics that no matter my tinkering, I was surprised never showed up as a major topic. There were no words or topics that I could find that related specifically to the World Wars or the creation of new amendments.  
+When I ran it that first time I got to appreciate NLP’s full power.  The first two topics were words that related to domestic and economic affairs.  Ok, makes sense.  Then I read the 3rd topic.  I realized all the words had to do with slavery and the antebellum compromises.  I was ecstatic.  NMF was supposed to be better for short text documents.  However its benefits shined through.   NMF learns topics by directly decomposing the term-document matrix and it reduces the dimensions to find the main topics of the speeches.  And here it was taking all the speeches and realizing that slavery was a topic that not only enveloped our country for decades leading to a Civil War but also continued to be something that Presidents discussed decades after its abolition.
+
+I set out to find a correlation with all of the 10 topics.  Topic modeling showed me some topics I wouldn’t expect, such as the Civil Service establishment.  I used to teach this in about 20 minutes yet this shows teachers should give this more emphasis. Also, there was a topic I best named ‘Encouragement’.  You have Presidents that have campaign slogans of positivity that make it into their presidency, but that has been going on for years.   This topic shows up in the 1950s with the advent of television and proves that television has shaped the presidency probably more than any invention.  There  are a few topics that no matter my tinkering, I was surprised never showed up as a major topic. There were no words or topics that I could find that related specifically to the World Wars or the creation of new amendments.  
+
+I’m a visual learner and creating a heatmap taught me even more.  Summing up the words of each topic you can observe them across time.
+```
+doc_topic_nmf = pd.DataFrame(doc_topic.round(3),
+                             index = df.Year.astype(int), 
+                             columns = ["Domestic","Economy1", "Slavery","Economy2","Mid_1800s_Politics",  
+                     "Encouragement","Civil_Service", "Cold_War","20th_Cent_Politics", "Panama_Canal"
+                     ])
+dtn = doc_topic_nmf.groupby(doc_topic_nmf.index).sum()
+
+dtn.reset_index(level = 0, inplace = True)
+graph_topics = dtn.groupby(dtn.Year // 10 * 10).sum()
+graph_topics.drop(['Year'], axis=1, inplace = True) 
+plt.figure(figsize = (25, 6))
+sns.heatmap(graph_topics.T, annot=False, cbar=True, cmap="Blues")
+plt.xlabel('Year', fontsize = 20)
+plt.xticks(fontsize = 14)
+plt.yticks(fontsize = 16)
+plt.title('Speech Topics Over The Years\n', fontsize=25)
+```
+
+
+The darkest box in the heatmap below belongs to the Cold War in the 1960s.  This time period whether good(Space Race) or bad (Cuban Missile Crisis) encompassed the United States in many ways.  The darker stretch in the 1800s Politics demonstrates how this is a time period that should not be shortchanged in its teachings.  The politics around the National Bank were a debate for years.  Furthermore the Mexican American War and Manifest Destiny thoughts formulated the shape and land of our country. 
 
 <p align="center">
   <img  width="100%" height="100%"src="../images/Speech_heatmap.png" alt="Speeches Timeline Heatmap">
 </p>
 
 
-I’m a visual learner and creating a heatmap taught me even more.  Summing up the words of each topic you can observe them across time.
-??????? Do I put in code after first two sentences of how I grouped topics??????????????
-
-
-The darkest box belongs to the Cold War in the 1960s.  This time period whether good(Space Race) or bad (Cuban Missile Crisis) encompassed the United States in many ways.  The darker stretch in the 1800s Politics demonstrates how this is a time period that should not be shortchanged in its teachings.  The politics around the National Bank were a debate for years.  The Mexican American War and Manifest Destiny thoughts formulated the shape and land of our country. 
 
 ## Sentiment Analysis
 
