@@ -11,9 +11,6 @@ Natural Language Processing intrigued me from the beginning.  I first heard abou
 
 I scraped the majority of my speeches with Selenium from UVA's Miller Center.   Their collection of speeches and other primary sources is considered top-notch, even being referenced by Harvard’s database.  The page required scrolling so I needed more than your basic Beautiful Soup in scraping. 
 
-<div style="text-align:center"><img src="../images/dadnme.jpg" alt="Dad and I." width = "360" height = "361"></div>
-
-
 
 As I started cleaning up and analyzing my data, I realized some presidents should have had more speeches than were present in this collection.  I could fix this for Truman and Eisenhower by adding in their missing State of the Union Speeches from the NLTK’s corpus.  Every other president in this corpus had their SOU speeches already in the Miller Center collection.  In total my analysis included 1018 speeches with approximately 23.8 million words.  The math side of me did have to look at a few numbers and stats.  The shortest speech came from George Washington’s Second Inaugural Address with 787 words.  On the other hand, the longest speech goes to Harry Truman’s State of the Union address in 1946 at just shy of 170 thousand .  He had to discuss such historic topics as the post-war economy, protection for veterans, the creation of the United Nations, communism concerns...and that doesn’t even cover the first half!    
 The data, each being a full speech, has understandable asymmetry.  I could have scraped other speeches from other sources, but it would have made it extremely skewed to modern times.  Technology such as the radio and television led to more speeches versus letters written.  Examples of this already in the data set include televised Addresses to the Nation and FDR’s Fireside Chat’s.  
@@ -55,10 +52,8 @@ plt.title('Speech Topics Over The Years\n', fontsize=25)
 
 The darkest box in the heatmap below belongs to the Cold War in the 1960s.  This time period whether good(Space Race) or bad (Cuban Missile Crisis) encompassed the United States in many ways.  The darker stretch in the 1800s Politics demonstrates how this is a time period that should not be shortchanged in its teachings.  The politics around the National Bank were a debate for years.  Furthermore the Mexican American War and Manifest Destiny thoughts formulated the shape and land of our country. 
 
-<p align="center">
-  <img  width="100%" height="100%"src="../images/Speech_heatmap.png" alt="Speeches Timeline Heatmap">
-</p>
 
+<div style="text-align:center"><img src="../images/Speech_heatmap.png" alt="Speeches Timeline Heatmap" width = "100%" height = "100%"></div>
 
 
 ## Sentiment Analysis
@@ -93,14 +88,13 @@ I want to note two presidents who rounded out the top 10 most positive.  John Ad
 
 Yet down in the lower right corner are the least positive presidents.  Using content knowledge, this correlates with history.  Andrew Johnson was the first president impeached.  He did not get along with Congress’ Radical Republicans.  They passed the Tenure of Office Act which required senatorial approval of removal of any civil officer and he soon after violated it.  These contentions and disagreements over Reconstruction plans produced the lower sentiment score.  James Buchanan and John Tyler are both considered some of the worst Presidents. You think staff retention under Donald Trump is bad...John Tyler's whole cabinet quit a few months into his presidency! And William Taft did not want to be president. Taft never wanted to be in that sole power position.  Yet his wife and Teddy Roosevelt had political ambitions for him that led him to comply.  This data shows his unhappiness and his yearning to his eventual post as Chief Justice of the Supreme Court.  
 
-![image](../images/TreeMapPres.png)
 
 ## Word Clouds
 
 
-<p align="center">
-  <img  width="75%" height="75%"src="../images/GW_wordCloud.png" alt="Washington Word Cloud">
-</p>
+<div style="text-align:center"><img src="../images/GW_wordCloud.png" alt="Washington Word Cloud" width = "75%" height = "75%"></div>
+
+
 
 One last NLP analysis I did was compare top vocabulary used by different presidents.  I used Word Clouds which highlight words that are used more frequently.  I was not going to do this with all 44 Presidents, but I picked obvious people like Washington and Lincoln along with some personal favorites.  Many of these word clouds had vocabulary that mentioned the government and features of it like the Senate or the Constitution. I also looked at 2 presidents I personally thought did not have great oratory skills.  Even here the data showed personal opinions are not always true as one of them had a word cloud that was comparable to my picks for ‘greats’.  The other, all I can express is…
 
