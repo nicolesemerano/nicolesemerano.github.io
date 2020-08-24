@@ -5,7 +5,7 @@ title: "Presidential Speech Analysis with Natural Language Processing"
 
 #### By: Nicole Semerano
 
-333 Natural Language Processing intrigued me from the beginning.  I first heard about it at a presentation of an author predictor based on word patterns.  It later was explained to me with song lyrics across the decades.  So I sought to also use it in an historic way.  And where could I get a lot of data?  Presidents: they love to talk!  Or at least most did.  So I created a NLP project on Presidential speeches in American history. It includes all 44 presidents from George Washington's first inauguration in 1789 to speeches on Coronavirus at the end  April of 2020. Yes, I said 44 presidents as Grover Cleveland had two separate terms.  Fair warning as you read along:  I was an American Studies major and taught history for 12 years.  So don’t mind me as I throw in some presidential knowledge along with my knowledge on Data Science.  Enjoy!
+Natural Language Processing intrigued me from the beginning.  I first heard about it at a presentation of an author predictor based on word patterns.  It later was explained to me with song lyrics across the decades.  So I sought to also use it in an historic way.  And where could I get a lot of data?  Presidents: they love to talk!  Or at least most did.  So I created a NLP project on Presidential speeches in American history. It includes all 44 presidents from George Washington's first inauguration in 1789 to speeches on Coronavirus at the end  April of 2020. Yes, I said 44 presidents as Grover Cleveland had two separate terms.  Fair warning as you read along:  I was an American Studies major and taught history for 12 years.  So don’t mind me as I throw in some presidential knowledge along with my knowledge on Data Science.  Enjoy!
 
 ## Speech Organization
 
@@ -25,7 +25,7 @@ The data, each being a full speech, has understandable asymmetry.  I could have 
 
 I color coded my bar graph to represent presidents who served more than one term versus 4 or less years.  Lyndon Johnson, with the most, had historic events such as the Civil Rights Acts and the Vietnam War to address.  On the flip side, the two presidents with only one speech in the collection died months into their term. William Henry Harrison died specifically BECAUSE he gave his 2-hour inaugural speech in a snowstorm outside without a coat on.
 
-   <br></br>
+       
 </p>
 </p>
 
@@ -65,7 +65,7 @@ plt.title('Speech Topics Over The Years\n', fontsize=25)
 The darkest box in the heatmap below belongs to the Cold War in the 1960s.  This time period whether good(Space Race) or bad (Cuban Missile Crisis) encompassed the United States in many ways.  The darker stretch in the 1800s Politics demonstrates how this is a time period that should not be shortchanged in its teachings.  The politics around the National Bank were a debate for years.  Furthermore the Mexican American War and Manifest Destiny thoughts formulated the shape and land of our country. 
 
 
-<div style="text-align:center"><img src="../images/Speech_heatmap.png" alt="Speeches Timeline Heatmap" /></div>
+<div style="text-align:center"><img width="125%" height="125%" src="../images/Speech_heatmap.png" alt="Speeches Timeline Heatmap" /></div>
 
 
 ## Sentiment Analysis
@@ -107,8 +107,7 @@ Yet down in the lower right corner are the least positive presidents.  Using con
 <div style="text-align:center"><img style="padding-left: 50px;" src="../images/GW_wordCloud.png" alt="Washington Word Cloud" width = "75%" height = "75%"></div>
 
 
-
-One last NLP analysis I did was compare top vocabulary used by different presidents.  I used Word Clouds which highlight words that are used more frequently.  I was not going to do this with all 44 Presidents, but I picked obvious people like Washington and Lincoln along with some personal favorites.  Many of these word clouds had vocabulary that mentioned the government and features of it like the Senate or the Constitution. I also looked at 2 presidents I personally thought did not have great oratory skills.  Even here the data showed personal opinions are not always true as one of them had a word cloud that was comparable to my picks for ‘greats’.  The other, all I can express is…
+One last NLP analysis I did was compare top vocabulary used by different presidents.  I used Word Clouds which highlight words that are used more frequently.  I was not going to do this with all 44 Presidents, but I picked obvious people like Washington and Lincoln along with some personal favorites.  Many of these word clouds had vocabulary that mentioned the government and features of it like the Senate or the Constitution. I also looked at 2 presidents I personally thought did not have great oratory skills.  I do not want to name these extra presidents as to remain impartial.  And sure enough the data showed personal opinions are not always true as one of them had a word cloud that was comparable to my picks for ‘greats’.  The other, all I can express is…
 
 <p align="center">
   <img  width="33%" height="33%" src="../images/head_shake.gif" alt="Harvey Head Shake">
@@ -116,7 +115,7 @@ One last NLP analysis I did was compare top vocabulary used by different preside
 
 ## Farewell Address
 
-I hope you enjoyed reading about my project as much as I did creating it.  I tried to stay balanced throughout the project.  I did not include analysis with comparing or clustering speeches based on political party for two main reasons.  One, I did not want to add to the divisiveness culture.  Secondly, the Republican and Democratic Parties have not always been around.  And initial parties like the Federalists only lasted the first 50 years of the country.  I did not want to group the older parties into an ‘other’ category in calculations as the parties had polarizing viewpoints. I taught history for many years in an area where my political beliefs did not match the families I taught.  My biggest thing with students was to try to show them to look at both sides.  If you’re interested in checking out the code and materials that went with this project, check out my [Github](https://github.com/nicolesemerano/Metis-Project-4-Presidential-Speeches-NLP)!  So I leave you with thoughts from George Washington in his Farewell Address.  His sentiment on his presidency matches my sentiment to this project.
+I hope you enjoyed reading about my project as much as I did creating it.  I tried to stay balanced throughout the project.  I did not include analysis with comparing or clustering speeches based on a political party for two main reasons.  One, I did not want to add to the divisiveness culture.  Secondly, the Republican and Democratic Parties have not always been around.  And initial parties like the Federalists only lasted the first 50 years of the country.  I did not want to group the older parties into an ‘other’ category in calculations as the parties had polarizing viewpoints. I taught history for many years in an area where my political beliefs did not match the families I taught.  My biggest thing with students was to try to show them to look at both sides.  If you’re interested in checking out the code and materials that went with this project, check out my [Github](https://github.com/nicolesemerano/Metis-Project-4-Presidential-Speeches-NLP)!  I leave you with thoughts from George Washington in his Farewell Address.  His sentiment on his presidency matches my sentiment to this project.
 
 *”My feelings do not permit me to suspend the deep acknowledgment ... for the opportunities I have thence enjoyed of manifesting my inviolable attachment, by services faithful and persevering, though in usefulness unequal to my zeal.”*
 
