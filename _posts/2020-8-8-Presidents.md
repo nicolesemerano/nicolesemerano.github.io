@@ -5,7 +5,7 @@ title: "Presidential Speech Analysis with Natural Language Processing"
 
 #### By: Nicole Semerano
 
-222Natural Language Processing intrigued me from the beginning.  I first heard about it at a presentation of an author predictor based on word patterns.  It later was explained to me with song lyrics across the decades.  So I sought to also use it in an historic way.  And where could I get a lot of data?  Presidents: they love to talk!  Or at least most did.  So I created a NLP project on Presidential speeches in American history. It includes all 44 presidents from George Washington's first inauguration in 1789 to speeches on Coronavirus at the end  April of 2020. Yes, I said 44 presidents as Grover Cleveland had two separate terms.  Fair warning as you read along:  I was an American Studies major and taught history for 12 years.  So don’t mind me as I throw in some presidential knowledge along with my knowledge on Data Science.  Enjoy!
+333 Natural Language Processing intrigued me from the beginning.  I first heard about it at a presentation of an author predictor based on word patterns.  It later was explained to me with song lyrics across the decades.  So I sought to also use it in an historic way.  And where could I get a lot of data?  Presidents: they love to talk!  Or at least most did.  So I created a NLP project on Presidential speeches in American history. It includes all 44 presidents from George Washington's first inauguration in 1789 to speeches on Coronavirus at the end  April of 2020. Yes, I said 44 presidents as Grover Cleveland had two separate terms.  Fair warning as you read along:  I was an American Studies major and taught history for 12 years.  So don’t mind me as I throw in some presidential knowledge along with my knowledge on Data Science.  Enjoy!
 
 ## Speech Organization
 
@@ -25,6 +25,8 @@ The data, each being a full speech, has understandable asymmetry.  I could have 
 
 I color coded my bar graph to represent presidents who served more than one term versus 4 or less years.  Lyndon Johnson, with the most, had historic events such as the Civil Rights Acts and the Vietnam War to address.  On the flip side, the two presidents with only one speech in the collection died months into their term. William Henry Harrison died specifically BECAUSE he gave his 2-hour inaugural speech in a snowstorm outside without a coat on.
 
+   <br></br>
+</p>
 </p>
 
 
@@ -102,7 +104,7 @@ Yet down in the lower right corner are the least positive presidents.  Using con
 ## Word Clouds
 
 
-<div style="text-align:center"><img style="padding-left: 20px;" src="../images/GW_wordCloud.png" alt="Washington Word Cloud" width = "75%" height = "75%"></div>
+<div style="text-align:center"><img style="padding-left: 50px;" src="../images/GW_wordCloud.png" alt="Washington Word Cloud" width = "75%" height = "75%"></div>
 
 
 
@@ -111,6 +113,8 @@ One last NLP analysis I did was compare top vocabulary used by different preside
 <p align="center">
   <img  width="33%" height="33%" src="../images/head_shake.gif" alt="Harvey Head Shake">
 </p>
+
+## Farewell Address
 
 I hope you enjoyed reading about my project as much as I did creating it.  I tried to stay balanced throughout the project.  I did not include analysis with comparing or clustering speeches based on political party for two main reasons.  One, I did not want to add to the divisiveness culture.  Secondly, the Republican and Democratic Parties have not always been around.  And initial parties like the Federalists only lasted the first 50 years of the country.  I did not want to group the older parties into an ‘other’ category in calculations as the parties had polarizing viewpoints. I taught history for many years in an area where my political beliefs did not match the families I taught.  My biggest thing with students was to try to show them to look at both sides.  If you’re interested in checking out the code and materials that went with this project, check out my [Github](https://github.com/nicolesemerano/Metis-Project-4-Presidential-Speeches-NLP)!  So I leave you with thoughts from George Washington in his Farewell Address.  His sentiment on his presidency matches my sentiment to this project.
 
