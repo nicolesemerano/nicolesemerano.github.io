@@ -89,6 +89,7 @@ I want to note two presidents who rounded out the top 10 most positive.  John Ad
 
 Yet down in the lower right corner are the least positive presidents.  Using content knowledge, this correlates with history.  Andrew Johnson was the first president impeached.  He did not get along with Congress’ Radical Republicans.  They passed the Tenure of Office Act which required senatorial approval of removal of any civil officer and he soon after violated it.  These contentions and disagreements over Reconstruction plans produced the lower sentiment score.  James Buchanan and John Tyler are both considered some of the worst Presidents. You think staff retention under Donald Trump is bad...John Tyler's whole cabinet quit a few months into his presidency! And William Taft did not want to be president. Taft never wanted to be in that sole power position.  Yet his wife and Teddy Roosevelt had political ambitions for him that led him to comply.  This data shows his unhappiness and his yearning to his eventual post as Chief Justice of the Supreme Court.  
 
+![image](../images/TreeMapPres.png)
 
 ## Word Clouds
 
