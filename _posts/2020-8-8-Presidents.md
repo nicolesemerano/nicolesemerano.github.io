@@ -13,10 +13,10 @@ I scraped the majority of my speeches with Selenium from UVA's Miller Center.   
 
 
 
-<p align="left"><img width="33%" height="33%" src="../images/No._Pres_Speeches.png" alt="Speeches Count Bar Graph" align = "left"/>
+<p align="left"><img width="50%" height="50%" src="../images/No._Pres_Speeches.png" alt="Speeches Count Bar Graph" align = "left"/>
 
 <p align="right">
-   <br></br>
+     
 
 
 As I started cleaning up and analyzing my data, I realized some presidents should have had more speeches than were present in this collection.  I could fix this for Truman and Eisenhower by adding in their missing State of the Union Speeches from the NLTK’s corpus.  Every other president in this corpus had their SOU speeches already in the Miller Center collection.  In total my analysis included 1018 speeches with approximately 23.8 million words.  The math side of me did have to look at a few numbers and stats.  The shortest speech came from George Washington’s Second Inaugural Address with 787 words.  On the other hand, the longest speech goes to Harry Truman’s State of the Union address in 1946 at just shy of 170 thousand .  He had to discuss such historic topics as the post-war economy, protection for veterans, the creation of the United Nations, communism concerns...and that doesn’t even cover the first half!    
@@ -65,7 +65,7 @@ plt.title('Speech Topics Over The Years\n', fontsize=25)
 The darkest box in the heatmap below belongs to the Cold War in the 1960s.  This time period whether good(Space Race) or bad (Cuban Missile Crisis) encompassed the United States in many ways.  The darker stretch in the 1800s Politics demonstrates how this is a time period that should not be shortchanged in its teachings.  The politics around the National Bank were a debate for years.  Furthermore the Mexican American War and Manifest Destiny thoughts formulated the shape and land of our country. 
 
 
-<div style="text-align:center"><img width="125%" height="125%" src="../images/Speech_heatmap.png" alt="Speeches Timeline Heatmap" /></div>
+<div style="text-align:center"><img width="1800" height="432" src="../images/Speech_heatmap.png" alt="Speeches Timeline Heatmap" /></div>
 
 
 ## Sentiment Analysis
