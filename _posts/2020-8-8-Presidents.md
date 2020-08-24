@@ -84,10 +84,11 @@ There is a better way to visualize this information.  Since the values are so si
 
 I want to note two presidents who rounded out the top 10 most positive.  John Adams is what I nicknamed the ‘Rebound’ president in my US History classroom. He came after George Washington yet could never live up to him.  That combined with the XYZ Affair led him to be the only founding father to serve only one term.  This tree map recognizes him for the great orator he was.  Much later in our history you have Jimmy Carter, another man that struggled as president.  I once had a very conservative college professor say Carter was the nicest guy to be president. That kindness comes across in his speeches.
 
-<div style="text-align:center"><img src="../images/TreeMapPres.png" alt="Presidential Tree Map" ></div>
+<div style="text-align:center"><img src="../images/TreeMapPres.png" alt="Presidential Tree Map" /></div>
 
 
 Yet down in the lower right corner are the least positive presidents.  Using content knowledge, this correlates with history.  Andrew Johnson was the first president impeached.  He did not get along with Congress’ Radical Republicans.  They passed the Tenure of Office Act which required senatorial approval of removal of any civil officer and he soon after violated it.  These contentions and disagreements over Reconstruction plans produced the lower sentiment score.  James Buchanan and John Tyler are both considered some of the worst Presidents. You think staff retention under Donald Trump is bad...John Tyler's whole cabinet quit a few months into his presidency! And William Taft did not want to be president. Taft never wanted to be in that sole power position.  Yet his wife and Teddy Roosevelt had political ambitions for him that led him to comply.  This data shows his unhappiness and his yearning to his eventual post as Chief Justice of the Supreme Court.  
+
 
 ## Word Clouds
 
