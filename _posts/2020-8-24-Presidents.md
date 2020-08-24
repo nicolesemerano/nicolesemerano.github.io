@@ -65,7 +65,7 @@ plt.title('Speech Topics Over The Years\n', fontsize=25)
 The darkest box in the heatmap below belongs to the Cold War in the 1960s.  This time period whether good(Space Race) or bad (Cuban Missile Crisis) encompassed the United States in many ways.  The darker stretch in the 1800s Politics demonstrates how this is a time period that should not be shortchanged in its teachings.  The politics around the National Bank were a debate for years.  Furthermore the Mexican American War and Manifest Destiny thoughts formulated the shape and land of our country. 
 
 
-<div style="text-align:center"><img width="1350" height="324" src="../images/Speech_heatmap.png" alt="Speeches Timeline Heatmap" /></div>
+<div style="text-align:center"><img width="1350" height="216" src="../images/Speech_heatmap.png" alt="Speeches Timeline Heatmap" /></div>
 
 
 ## Sentiment Analysis
